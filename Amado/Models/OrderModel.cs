@@ -8,11 +8,6 @@ namespace Amado.Models
         [Key]
         [Required]
         public int OrderID { get; set; }
-        [ForeignKey("CartModel")]
-        public int CartID { get; set; }
-
-        public CartModel? Cart { get; set; }
-
         [ForeignKey("UserModel")]
         public int UserID { get; set; }
 
