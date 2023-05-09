@@ -11,19 +11,19 @@ namespace Amado.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Cart_ItemModel>().HasKey(ci => new { ci.CartID, ci.ItemID });
+            modelBuilder.Entity<Cart_Item>().HasKey(ci => new { ci.CartID, ci.ItemID });
 
-            modelBuilder.Entity<Cart_ItemModel>().HasOne(c => c.Cart).WithMany(ci => ci.CartItems).HasForeignKey(c => c.CartID);
-            modelBuilder.Entity<Cart_ItemModel>().HasOne(i => i.Item).WithMany(ci => ci.CartItems).HasForeignKey(i => i.ItemID);
+            modelBuilder.Entity<Cart_Item>().HasOne(c => c.Cart).WithMany(ci => ci.CartItems).HasForeignKey(c => c.CartID);
+            modelBuilder.Entity<Cart_Item>().HasOne(i => i.Item).WithMany(ci => ci.CartItems).HasForeignKey(i => i.ItemID);
 
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<UserModel> User { get; set; }
-        public DbSet<ItemModel> Item { get; set; }
-        public DbSet<ImageModel> Image { get; set; }
-        public DbSet<CartModel> Cart { get; set; }
-        public DbSet<Cart_ItemModel> Cart_Item { get; set; }
-        public DbSet<OrderModel> Order { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Item> Item { get; set; }
+        public DbSet<Image> Image { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+        public DbSet<Cart_Item> Cart_Item { get; set; }
+        public DbSet<Order> Order { get; set; }
     }
 }

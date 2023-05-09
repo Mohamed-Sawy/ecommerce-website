@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amado.Models
 {
-    public class ImageModel
+    public class Image
     {
         [Key]
         [Required]
@@ -12,6 +12,8 @@ namespace Amado.Models
         [ForeignKey("ItemModel")]
         public int ItemID { get; set; }
 
-        public ItemModel? Item { get; set; }
+        public String? ImageURL { get; set; }
+
+        public Item? Item { get; set; }
     }
 }

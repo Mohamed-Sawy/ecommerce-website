@@ -4,15 +4,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amado.Models
 {
-    public class UserModel
+    public class User
     {
         [Key]
         [Required]
-        public int UserId { get; set; }
+        public int UserID { get; set; }
         [ForeignKey("CartModel")]
         public int CartID { get; set; }
 
-        public CartModel? Cart { get; set; }
+        public Cart? Cart { get; set; }
 
         public string? FirstName { get; set; }
 
@@ -31,7 +31,7 @@ namespace Amado.Models
 
         public string? PhoneNo { get; set; }
 
-        public List<OrderModel>? Orders { get; set; }
+        public List<Order>? Orders { get; set; }
 
     }
 }

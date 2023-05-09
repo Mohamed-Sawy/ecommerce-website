@@ -2,7 +2,7 @@
 
 namespace Amado.Models
 {
-    public class CartModel
+    public class Cart
     {
         [Key]
         [Required]
@@ -10,8 +10,8 @@ namespace Amado.Models
 
         public double TotalPrice { get; set; }
 
-        public List<Cart_ItemModel>? CartItems { get; set; }
-        public List<OrderModel>? Orders { get; set; }
+        public List<Cart_Item>? CartItems { get; set; }
+        public List<Order>? Orders { get; set; }
 
     }
 }

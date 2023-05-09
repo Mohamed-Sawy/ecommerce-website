@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amado.Models
 {
-    public class OrderModel
+    public class Order
     {
         [Key]
         [Required]
@@ -11,7 +11,7 @@ namespace Amado.Models
         [ForeignKey("UserModel")]
         public int UserID { get; set; }
 
-        public UserModel? User { get; set; }
+        public User? User { get; set; }
 
        
         public string? Comment { get; set; }

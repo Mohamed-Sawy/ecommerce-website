@@ -1,16 +1,18 @@
-﻿using Amado.Models;
+﻿using Amado.Data;
+using Amado.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Amado.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(AppDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
   
@@ -34,9 +36,10 @@ namespace Amado.Controllers
         }   
         public IActionResult Checkout()
         {
+            var data = _context.Cart.Find(_context.User.Find(1).CartID);
             ViewBag.LINK = "Checkout.css";
             ViewBag.TITLE = "Checkout";
-            return View();
+            return View(data);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
