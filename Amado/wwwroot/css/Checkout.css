@@ -1,0 +1,120 @@
+.checkout-form-first-name{
+    grid-area: checkout-form-first-name;
+    background-color: #f5f7fa;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-last-name{
+    grid-area: checkout-form-last-name;
+    background-color: #f5f7fa;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-company-name{
+    grid-area: checkout-form-company-name;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-email{
+    grid-area: checkout-form-email;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-country{
+    grid-area: checkout-form-country;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-address{
+    grid-area: checkout-form-address;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-town{
+    grid-area: checkout-form-town;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-zip-code{
+    grid-area: checkout-form-zip-code;
+    background-color: #f5f7fa;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-phone-no{
+    grid-area: checkout-form-phone-no;
+    background-color: #f5f7fa;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+.checkout-form-comment{
+    grid-area: checkout-form-comment;
+    background-color: #f5f7fa;
+    width: 600px;
+    border: 0px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.checkout-form {
+    display: grid;
+    text-align: left;
+    grid-template-areas: 
+    "checkout-form-first-name    checkout-form-last-name"
+    "checkout-form-company-name  checkout-form-company-name"
+    "checkout-form-email         checkout-form-email"
+    "checkout-form-country       checkout-form-country"
+    "checkout-form-address       checkout-form-address"
+    "checkout-form-town          checkout-form-town"
+    "checkout-form-zip-code      checkout-form-phone-no"
+    "checkout-form-comment       checkout-form-comment";
+}
+
+.cart-header{
+    margin: 0px;
+}
+.cart-list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.cart-button{
+    color: white;
+    border: 0px;
+    background-color: #fbb710;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.cart-total {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 77px;
+    position: relative;
+    background-color: #f5f7fa;
+    height: 400px;
+    width: 300px;
+}
+.amado-main-page-container {
+    display: flex;
+}

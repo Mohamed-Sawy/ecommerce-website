@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model OrderModel
+<div class="amado-main-page-container">
+        <div class="checkout">
+            <h2 class="checkout-header">Checkout</h2>
+            <form id="checkout-form-id" class="checkout-form" asop-action="checkout" method="post">
+                <input asp-for="FirstName" class="checkout-form-first-name" placeholder="First Name" />
+                <input asp-for="SecondName" class=" checkout-form-last-name" placeholder="Last Name" />
+                <input asp-for="CompanyName" class="checkout-form-company-name" placeholder="Company Name" />
+                <input asp-for="Email" class="checkout-form-email" placeholder="Email" />
+                <select asp-for="Country" class="checkout-form-country">
+                    <option value="egypt">Egypt</option>
+                </select>
+                <input asp-for="Address" class="checkout-form-address" placeholder="Address" />
+                <input asp-for="Town" class="checkout-form-town" placeholder="Town" />
+                <input asp-for="ZIPCode" class="checkout-form-zip-code" placeholder="Zip Code" />
+                <input asp-for="PhoneNo" class="checkout-form-phone-no" placeholder="Phone No" />
+                <textarea asp-for="Comment" class="checkout-form-comment" cols="30" rows="10" placeholder="Leave a comment about your order"></textarea>
+            </form>
+        </div>
+        <div class="cart-total">
+            <h2 class="cart-header">Cart Total</h2>
+            <ul class="cart-list">
+                <li><p>subtotal:</p></li>
+                <li><p>140$</p></li>
+                <li><p>Delivery:</p></li>
+                <li><p>Free</p></li>
+                <li><p>Total:</p></li>
+                <li><p>140$</p></li>
+            </ul>
+        <button class="cart-button" type="submit" form="checkout-form-id" asp-area="" asp-controller="Home" asp-action="Checkout">Checkout</button>
+        </div>
+</div>

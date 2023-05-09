@@ -1,0 +1,58 @@
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\appsettings.Development.json
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\appsettings.json
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.staticwebassets.runtime.json
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.exe
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.deps.json
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.runtimeconfig.json
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.dll
+D:\College\Software development\Project\Amado\Amado\bin\Debug\net6.0\Amado.pdb
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.csproj.AssemblyReference.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.GeneratedMSBuildEditorConfig.editorconfig
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.AssemblyInfoInputs.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.AssemblyInfo.cs
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.csproj.CoreCompileInputs.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.MvcApplicationPartsAssemblyInfo.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.RazorAssemblyInfo.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.RazorAssemblyInfo.cs
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.build.Amado.props
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Amado.props
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Amado.props
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets.pack.json
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets.build.json
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\staticwebassets.development.json
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\scopedcss\bundle\Amado.styles.css
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.dll
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\refint\Amado.dll
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.pdb
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\Amado.genruntimeconfig.cache
+D:\College\Software development\Project\Amado\Amado\obj\Debug\net6.0\ref\Amado.dll
+D:\Amado\Amado\bin\Debug\net6.0\appsettings.Development.json
+D:\Amado\Amado\bin\Debug\net6.0\appsettings.json
+D:\Amado\Amado\bin\Debug\net6.0\Amado.staticwebassets.runtime.json
+D:\Amado\Amado\bin\Debug\net6.0\Amado.exe
+D:\Amado\Amado\bin\Debug\net6.0\Amado.deps.json
+D:\Amado\Amado\bin\Debug\net6.0\Amado.runtimeconfig.json
+D:\Amado\Amado\bin\Debug\net6.0\Amado.dll
+D:\Amado\Amado\bin\Debug\net6.0\Amado.pdb
+D:\Amado\Amado\obj\Debug\net6.0\Amado.csproj.AssemblyReference.cache
+D:\Amado\Amado\obj\Debug\net6.0\Amado.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amado\Amado\obj\Debug\net6.0\Amado.AssemblyInfoInputs.cache
+D:\Amado\Amado\obj\Debug\net6.0\Amado.AssemblyInfo.cs
+D:\Amado\Amado\obj\Debug\net6.0\Amado.csproj.CoreCompileInputs.cache
+D:\Amado\Amado\obj\Debug\net6.0\Amado.MvcApplicationPartsAssemblyInfo.cache
+D:\Amado\Amado\obj\Debug\net6.0\Amado.RazorAssemblyInfo.cache
+D:\Amado\Amado\obj\Debug\net6.0\Amado.RazorAssemblyInfo.cs
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.Amado.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.build.Amado.props
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Amado.props
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Amado.props
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets.build.json
+D:\Amado\Amado\obj\Debug\net6.0\staticwebassets.development.json
+D:\Amado\Amado\obj\Debug\net6.0\scopedcss\bundle\Amado.styles.css
+D:\Amado\Amado\obj\Debug\net6.0\Amado.dll
+D:\Amado\Amado\obj\Debug\net6.0\refint\Amado.dll
+D:\Amado\Amado\obj\Debug\net6.0\Amado.pdb
+D:\Amado\Amado\obj\Debug\net6.0\Amado.genruntimeconfig.cache
+D:\Amado\Amado\obj\Debug\net6.0\ref\Amado.dll
