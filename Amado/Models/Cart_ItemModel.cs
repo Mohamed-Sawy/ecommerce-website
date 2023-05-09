@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amado.Models
 {
-    public class CartItemModel
+    public class Cart_ItemModel
     {
         [Key]
         [ForeignKey("CartModel")]

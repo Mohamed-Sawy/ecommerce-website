@@ -10,6 +10,8 @@ namespace Amado.Models
 
         public double TotalPrice { get; set; }
 
+        public List<Cart_ItemModel>? CartItems { get; set; }
         public List<OrderModel>? Orders { get; set; }
+
     }
 }

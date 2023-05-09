@@ -17,5 +17,8 @@ namespace Amado.Models
         public Color Color { get; set; }
 
         public int Quantity { get; set; }
+
+        public List<Cart_ItemModel>? CartItems { get; set; }
+        public List<ImageModel>? Images { get; set; }
     }
 }
