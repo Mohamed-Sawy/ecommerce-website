@@ -25,5 +25,6 @@ namespace Amado.Data
         public DbSet<Cart> Cart { get; set; }
         public DbSet<Cart_Item> Cart_Item { get; set; }
         public DbSet<Order> Order { get; set; }
+        public DbSet<Order_Item> Order_Item { get; set; }
     }
 }

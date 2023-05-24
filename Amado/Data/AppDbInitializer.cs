@@ -11,9 +11,7 @@ namespace Amado.Data
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
-
                 context.Database.EnsureCreated();
-
                 if (!context.Item.Any())
                 {
                     context.Item.AddRange(new List<Item>()
@@ -28,8 +26,87 @@ namespace Amado.Data
                             Color = Color.White,
                             Quantity = 50,
                         },
+                         new Item()
+                        {
+                            Name = "Plant Pot",
+                            Price = 140,
+                            Rate = 4,
+                            Category = Category.Accessories,
+                            Brand = Brand.Amado,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                         new Item()
+                        {
+                            Name = "Modern Rocking Chair",
+                            Price = 380,
+                            Rate = 5,
+                            Category = Category.Chairs,
+                            Brand = Brand.FurnitureInc,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                         new Item()
+                        {
+                            Name = "Minimalistic Plant Pot",
+                            Price = 190,
+                            Rate = 5,
+                            Category = Category.Accessories,
+                            Brand = Brand.Artdeco,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                         new Item()
+                        {
+                            Name = "Small Table",
+                            Price = 450,
+                            Rate = 5,
+                            Category = Category.Furniture,
+                            Brand = Brand.Ikea,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                         new Item()
+                        {
+                            Name = "Home Deco",
+                            Price = 270,
+                            Rate = 3,
+                            Category = Category.HomeDeco,
+                            Brand = Brand.TheFactory,
+                            Color = Color.White,
+                            Quantity = 50,
+                        }, 
+                        new Item()
+                        {
+                            Name = "Modern Chair+",
+                            Price = 370,
+                            Rate = 4,
+                            Category = Category.Chairs,
+                            Brand = Brand.Amado,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                        new Item()
+                        {
+                            Name = "Night Stand",
+                            Price = 110,
+                            Rate = 5,
+                            Category = Category.Accessories,
+                            Brand = Brand.Amado,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
+                        new Item()
+                        {
+                            Name = "Metalic Chair",
+                            Price = 250,
+                            Rate = 5,
+                            Category = Category.Chairs,
+                            Brand = Brand.Ikea,
+                            Color = Color.White,
+                            Quantity = 50,
+                        },
                     });
-
                     context.SaveChanges();
                 }
                 if (!context.Image.Any())
@@ -39,10 +116,49 @@ namespace Amado.Data
                         new Models.Image()
                         {
                             ItemID = 1,
-                            ImageURL = "~/assets/8.jpg.webp",
+                            ImageURL = "/assets/1.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 2,
+                            ImageURL = "/assets/5.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 3,
+                            ImageURL = "/assets/8.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 4,
+                            ImageURL = "/assets/2.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 5,
+                            ImageURL = "/assets/6.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 6,
+                            ImageURL = "/assets/9.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 7,
+                            ImageURL = "/assets/3.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 8,
+                            ImageURL = "/assets/4.jpg.webp",
+                        },
+                        new Models.Image()
+                        {
+                            ItemID = 9,
+                            ImageURL = "/assets/7.jpg.webp",
                         },
                     });
-
                     context.SaveChanges();
                 }
                 if (!context.Cart.Any())
@@ -51,21 +167,11 @@ namespace Amado.Data
                     {
                         new Cart()
                         {
-                            TotalPrice = 180,
+                            TotalPrice = 0,
                         },
-                    });
-
-                    context.SaveChanges();
-                }
-                if (!context.Cart_Item.Any())
-                {
-                    context.Cart_Item.AddRange(new List<Cart_Item>()
-                    {
-                        new Cart_Item()
+                        new Cart()
                         {
-                            CartID = 1,
-                            ItemID = 1,
-                            Quantity = 1,
+                            TotalPrice = 0,
                         },
                     });
 
@@ -87,24 +193,23 @@ namespace Amado.Data
                             Town = "test town",
                             ZIPCode = "123",
                             PhoneNo = "0123",
+                            Password = "testpass",
+                            IsAdmin = false,
                         },
-                    });
-
-                    context.SaveChanges();
-                }
-                if (!context.Order.Any())
-                {
-                    context.Order.AddRange(new List<Order>()
-                    {
-                        new Order()
+                        new User()
                         {
-                            UserID = 1,
-                            Comment = "test comment",
+                            CartID = 2,
+                            FirstName = "test",
+                            SecondName = "admin",
+                            Email = "admin@amado.com",
+                            Password = "adminpass",
+                            IsAdmin = true,
                         },
                     });
 
                     context.SaveChanges();
                 }
+
             }
         }
     }

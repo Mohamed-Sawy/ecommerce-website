@@ -125,6 +125,9 @@ namespace Amado.Migrations
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("float");
+
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
@@ -135,6 +138,29 @@ namespace Amado.Migrations
                     b.HasIndex("UserID");
 
                     b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("Amado.Models.Order_Item", b =>
+                {
+                    b.Property<int>("OrderID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderID", "ItemID");
+
+                    b.ToTable("Order_Item");
                 });
 
             modelBuilder.Entity("Amado.Models.User", b =>
@@ -161,6 +187,12 @@ namespace Amado.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNo")
@@ -225,6 +257,17 @@ namespace Amado.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Amado.Models.Order_Item", b =>
+                {
+                    b.HasOne("Amado.Models.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("Amado.Models.User", b =>

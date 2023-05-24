@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Amado",
+    "\\Amado\\Views",
+    "\\Amado\\Views\\Home"
   ],
   "SelectedNode": "\\Amado.sln",
   "PreviewInSolutionExplorer": false

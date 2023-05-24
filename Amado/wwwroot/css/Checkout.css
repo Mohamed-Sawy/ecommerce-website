@@ -1,6 +1,12 @@
-.checkout-form-first-name{
+.checkout-form {
+    margin-bottom: 10rem;
+}
+    .checkout-form input, .checkout-form select, .checkout-form textarea {
+        background-color: #eee;
+    }
+.checkout-form-first-name {
     grid-area: checkout-form-first-name;
-    background-color: #f5f7fa;
+    background-color: #f5f7fa ;
     border: 0px;
     padding: 20px;
     margin: 10px;
@@ -96,12 +102,16 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.cart-button{
+.cart-button {
+    width: 90px;
+    height: 40px;
+    background-color: var(--c1);
+    border: none;
     color: white;
-    border: 0px;
-    background-color: #fbb710;
-    cursor: pointer;
-    transition-duration: 0.4s;
+    transition: .3s;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    margin-left:33%
 }
 
 .cart-total {

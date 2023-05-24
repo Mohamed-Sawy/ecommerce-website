@@ -1,96 +1,80 @@
-﻿@*
-*@
+﻿
 @{
+    int counter = 0;
 }
-<!-- Enter Your Content Here  -->
 <div class="amado-main-page-container" style="position: relative">
     <div class="photo_cont">
+        @for (int i = counter; i < counter + 3 && i < ViewBag.ITEMS.Count; i++)
+       {
         <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/1.jpg" alt="Your Photo">
+            @foreach (var image in ViewBag.IMAGES)
+            {
+            @if (image.ItemID == ViewBag.ITEMS[i].ItemID)
+            {
+                string url = @image.ImageURL;
+                        <img src="@url" alt="Your Photo">
+                break;
+            }
+            }
             <div class="text-overlay">
                 <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $180</p>
-                <h4>Modern Chair</h4>
+                    <p>From @ViewBag.ITEMS[i].Price</p>
+                    <h4><a href=" @Url.Action("Product", "Home", new { id = ViewBag.ITEMS[i].ItemID })" style="color:black"> @ViewBag.ITEMS[i].Name</a></h4>
             </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/5.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $180</p>
-                <h4>Plant Pot</h4>
-            </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/8.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $380</p>
-                <h4>Modern Rocking Chair</h4>
-            </div>
-        </div>
+         </div>
+       }
+        @{
+            counter = 3;
+        }
     </div>
-
     <div class="photo_cont">
-
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/2.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $180</p>
-                <h4>Minimalistic Plant Pot</h4>
+        @for (int i = counter; i < counter + 3 && i < ViewBag.ITEMS.Count; i++)
+        {
+            <div class="photo-container">
+                @foreach (var image in ViewBag.IMAGES)
+                {
+                    @if (image.ItemID == ViewBag.ITEMS[i].ItemID)
+                    {
+                        string url = @image.ImageURL;
+                        <img src="@url" alt="Your Photo">
+                        break;
+                    }
+                }
+                <div class="text-overlay">
+                    <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
+                    <p>From @ViewBag.ITEMS[i].Price</p>
+                    <h4><a href=" @Url.Action("Product", "Home", new { id = ViewBag.ITEMS[i].ItemID })" style="color:black"> @ViewBag.ITEMS[i].Name</a></h4>
+                </div>
             </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/6.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $320</p>
-                <h4>Small Table</h4>
-            </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/9.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $380</p>
-                <h4>Home Deco</h4>
-            </div>
-        </div>
-
-
+        }
+        @{
+            counter = 6;
+        }
     </div>
-
     <div class="photo_cont">
-
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/3.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $180</p>
-                <h4>Modern Chair</h4>
+        @for (int i = counter; i < counter + 3 && i < ViewBag.ITEMS.Count; i++)
+        {
+            <div class="photo-container">
+                @foreach (var image in ViewBag.IMAGES)
+                {
+                    @if (image.ItemID == ViewBag.ITEMS[i].ItemID)
+                    {
+                        string url = @image.ImageURL;
+                        <img src="@url" alt="Your Photo">
+                        break;
+                    }
+                }
+                <div class="text-overlay">
+                    <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
+                    <p>From @ViewBag.ITEMS[i].Price</p>
+                    <h4><a href=" @Url.Action("Product", "Home", new { id = ViewBag.ITEMS[i].ItemID })" style="color:black"> @ViewBag.ITEMS[i].Name</a></h4>
+                </div>
             </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/4.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $120</p>
-                <h4>Night Stand</h4>
-            </div>
-        </div>
-        <div class="photo-container">
-            <img src="https://preview.colorlib.com/theme/amado/img/bg-img/7.jpg" alt="Your Photo">
-            <div class="text-overlay">
-                <p style="color:orange; width: 90px; font-size: 25px;">--------</p>
-                <p>From $380</p>
-                <h4>Metalic Chair</h4>
-            </div>
-        </div>
-
-
+        }
+        @{
+            counter = 9;
+        }
     </div>
-
     <div class="Subscribe">
         <div class="formdiv">
             <form method="post" class="myform">
@@ -104,23 +88,16 @@
         </div>
     </div>
     <div class="footer">
+        <div class="logofooter">
+            <img src="~/assets//logo2.png.webp" alt="your photo" id="logofooter">
+        </div>
         <div class="footerlist">
             <ul>
                 <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Cart">Cart</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Checkout">Checkout</a></li>
-
             </ul>
         </div>
-        <div class="logofooter">
-            <img src="https://preview.colorlib.com/theme/amado/img/core-img/logo2.png" alt="your photo" id="logofooter">
-
-        </div>
-
-
     </div>
 </div>
-
-
-

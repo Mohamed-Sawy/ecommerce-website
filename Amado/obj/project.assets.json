@@ -3515,11 +3515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SoftwareDevelopmentProject_M\\Amado\\Amado\\Amado.csproj",
+      "projectUniqueName": "D:\\Project Final Final Final Final Final Final Final FInal Final\\Amado\\Amado\\Amado.csproj",
       "projectName": "Amado",
-      "projectPath": "D:\\SoftwareDevelopmentProject_M\\Amado\\Amado\\Amado.csproj",
+      "projectPath": "D:\\Project Final Final Final Final Final Final Final FInal Final\\Amado\\Amado\\Amado.csproj",
       "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-      "outputPath": "D:\\SoftwareDevelopmentProject_M\\Amado\\Amado\\obj\\",
+      "outputPath": "D:\\Project Final Final Final Final Final Final Final FInal Final\\Amado\\Amado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",

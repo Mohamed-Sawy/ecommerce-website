@@ -10,10 +10,8 @@ namespace Amado.Models
         public int OrderID { get; set; }
         [ForeignKey("UserModel")]
         public int UserID { get; set; }
-
         public User? User { get; set; }
-
-       
         public string? Comment { get; set; }
+        public double TotalPrice { get; set; }
     }
 }

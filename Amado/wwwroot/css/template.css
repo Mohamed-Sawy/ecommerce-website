@@ -4,31 +4,25 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 :root {
-    --c1: #fbb610;
+    --c1:#fbb610;
     --c2:#121212;
     --c3:#3c3c3c;
     --c4:#252525;
 }
-
 html {
     scroll-behavior: smooth;
     margin: 0px;
 }
-
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
-
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-
 a {
     text-decoration: none;
 }
@@ -70,7 +64,6 @@ ul {
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 3rem;
-    /* font-weight: 500; */
 }
 .amado-nav-logo{
     margin-bottom: 3rem;
@@ -127,13 +120,11 @@ color: var(--c1);
 .amado-nav-buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 15%;
     align-items: center;
 }
 .amado-nav-buttons button{
-    height: 3rem;
-    width: 10rem;
     transform: translate(10%);
 }
 .amado-nav-buttons button:nth-child(1)
@@ -141,6 +132,10 @@ color: var(--c1);
     background-color: var(--c1);
     color: white;
     border: none;
+    border-radius:0.3rem;
+    width:5rem;
+    height:2rem;
+    font-size:0.8rem;
     font-weight: bold;
     transition-duration: 0.2s;
 }
@@ -151,6 +146,10 @@ color: var(--c1);
     background-color: var(--c2);
     color: white;
     border: none;
+    border-radius: 0.3rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.8rem;
     font-weight: bold;
     transition-duration: 0.2s;
 }
@@ -160,7 +159,7 @@ color: var(--c1);
 .amado-nav-widget{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     margin-left: 2rem;
     height: 8%;
@@ -171,11 +170,10 @@ color: var(--c1);
     width: 120%;
     display: flex;
     align-items: center;
-
     font-size: 1.2rem;
 }
 .amado-nav-widget .widget i{
-    margin-right: 2rem;
+    margin-right: 0.8rem;
     color: #777777;
     transition-duration: 0.2s;
 }
@@ -204,21 +202,13 @@ color: var(--c1);
     position: absolute;
     width: 75%;
     left: 25%;
-    margin-bottom:100px;
-    padding-bottom: 50px; 
 }
-
-
-
-
 .Subscribe {
     float: left;
     background-color: #3C3C3C;
-    width: 1013px;
+    max-width: 100%;
     height: 300px;
 }
-
-
 .formdiv {
     width: 48%;
     float: right;
@@ -232,24 +222,24 @@ color: var(--c1);
     margin-left: 5px;
 }
 
-    .myform button {
-        background-color: #FBB710;
-        padding: 8px 12px;
-        height: 45px;
-        width: 130px;
-        text-align: center;
-        color: white;
-        border: none;
-        float: right;
-    }
+.myform button {
+    background-color: #FBB710;
+    padding: 8px 12px;
+    height: 45px;
+    width: 130px;
+    text-align: center;
+    color: white;
+    border: none;
+    float: right;
+}
 
-    .myform input {
-        padding: 8px 12px;
-        height: 45px;
-        width: 300px;
-        border: none;
-        float: right;
-    }
+.myform input {
+    padding: 8px 12px;
+    height: 45px;
+    width: 300px;
+    border: none;
+    float: right;
+}
 
 .content {
     width: 48%;
@@ -270,32 +260,32 @@ color: var(--c1);
 }
 
 .footer {
-    float: left;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     background-color: #252525;
     width: 100%;
     height: 250px;
 }
 
 .footerlist {
-    float: right;
+    flex:0.8;
     width: 60%;
 }
 
-    .footerlist li {
-        display: inline-block;
-        margin-left: 40px;
-        color: white;
-        text-align: center;
-        padding-top: 105px;
-    }
+.footerlist li {
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+}
 
-    .footerlist ul :hover {
-        color: #FBB710;
-    }
+.footerlist ul :hover {
+    color: #FBB710;
+}
 
 .logofooter {
     width: 40%;
-    float: right;
 }
 
 

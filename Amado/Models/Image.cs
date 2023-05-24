@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amado.Models
@@ -12,6 +13,7 @@ namespace Amado.Models
         [ForeignKey("ItemModel")]
         public int ItemID { get; set; }
 
+        [DefaultValue("/assets/default.png")]
         public String? ImageURL { get; set; }
 
         public Item? Item { get; set; }
